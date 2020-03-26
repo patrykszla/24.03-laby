@@ -6,6 +6,51 @@
              mc:Ignorable="d"
              x:Class="_24._03_laby.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="boxViewColor">LightGray</Color>
+            <Color x:Key="textColor">Black</Color>
+            <Color x:Key="frameBorder">Gray</Color>
+            <Color x:Key="frameBackground">#33f069</Color>
+            
+            <Style TargetType="StackLayout" x:Key="mainStackLayout">
+                <Setter Property="Padding" Value="24"/>
+                <Setter Property="Spacing" Value="12"/>
+            </Style>
 
+            <Style TargetType="Label" x:Key="centeredLabel">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            
+            <Style TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="{StaticResource textColor}"/>
+            </Style>
+
+            <Style x:Key="frameCircle" TargetType="Frame">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HasShadow" Value="False"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource frameBackground}"/>
+                <Setter Property="BorderColor" Value="{StaticResource frameBorder}" />
+            </Style>
+
+            <Style x:Key="boxViewHorizontal" TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="1"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource boxViewColor}"/>
+                
+            </Style>
+            <Style x:Key="boxViewVertical" TargetType="BoxView">
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="1"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource boxViewColor}"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
