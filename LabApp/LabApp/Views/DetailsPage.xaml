@@ -5,15 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="LabApp.Views.DetailsPage"
-              xmlns:viewModels="clr-namespace:LabApp.ViewModels"
-             xmlns:converters="clr-namespace:LabApp.Converters" xmlns:controls="clr-namespace:LabApp.Views.Controls"
+             xmlns:controls="clr-namespace:LabApp.Views.Controls"
+             xmlns:viewModels="clr-namespace:LabApp.ViewModels"
+             xmlns:converters="clr-namespace:LabApp.Converters" 
              Style="{StaticResource DetailPageStyle}">
     <ContentPage.BindingContext>
         <viewModels:DetailsViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>
-            <converters:ValueToPercentConverter x:Key="ValueToPercent"/>
+            <converters:PercentToValueConverter x:Key="PercentToValue"/>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView>
@@ -59,7 +60,9 @@
                             </Label>
                         </controls:ContentWithHeader.ControlContent>
                     </controls:ContentWithHeader>
+                    
                     <BoxView Grid.Column="1" Style="{StaticResource VerticalLine}"/>
+                    
                     <controls:ContentWithHeader Grid.Column="2" Title="PM 2,5">
                         <controls:ContentWithHeader.ControlContent>
                             <Label>
@@ -95,7 +98,7 @@
 
                 <BoxView Style="{StaticResource HorizontalLine}"/>
 
-                <controls:ContentWithHeader>
+                <controls:ContentWithHeader Title="Ciśnienie">
                     <controls:ContentWithHeader.ControlContent>
                         <StackLayout>
                             <Label 
@@ -114,7 +117,7 @@
             <ImageButton
                 Style="{StaticResource ImageButtonHelpedStyle}"
                 Source="baseline_help_outline_black_24.png"
-                Clicked="ImageButton_Clicked"/>
+                Clicked="Help_Clicked"/>
         </Grid>
     </ScrollView>
 

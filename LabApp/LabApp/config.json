@@ -1,0 +1,6 @@
+﻿{
+  "ApiUrl": "airapi.airly.eu/v2",
+  "ApiMeasurementUrl": "measurements/installation",
+  "ApiInstallationUrl": "installations/nearest",
+  "ApiKey": "M4uK8IuDMoM8k2eIZRzpCg48sg3soYv2"
+}

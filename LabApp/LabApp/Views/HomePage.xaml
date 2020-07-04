@@ -5,7 +5,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="LabApp.Views.HomePage">
-    <Button Text="Go to detail" Command="{Binding GoToDetailsCommand}"
-             VerticalOptions="CenterAndExpand"
-             HorizontalOptions="Center"/>
+    <Grid>
+
+        <ListView ItemTapped="ListView_ItemTapped" ItemsSource="{Binding ItemsList}" SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Installation.Address.Description}"
+                              Detail="{Binding CurrentDisplayValue, StringFormat='CAQI: {0}'}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ActivityIndicator IsRunning="{Binding Loading}" IsVisible="{Binding Loading}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+    </Grid>
 </ContentPage>

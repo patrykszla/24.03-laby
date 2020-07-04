@@ -1,23 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.ComponentModel;
+using LabApp.Models;
+using LabApp.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 
 namespace LabApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+    [DesignTimeVisible(false)]
     public partial class DetailsPage : ContentPage
     {
-        public DetailsPage()
+        public DetailsPage(Measurement itemElement)
         {
             InitializeComponent();
-        }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+            var detailVM = BindingContext as DetailsViewModel;
+            detailVM.Item = itemElement;
+        }
+        private void Help_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Co to jest CAQI?", "Lorem ipsum.", "Zamknij");
         }

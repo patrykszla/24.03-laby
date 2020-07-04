@@ -79,6 +79,7 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\androi
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\mscorlib.pdb
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\netstandard.dll
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.pdb
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\assets\System.Core.dll

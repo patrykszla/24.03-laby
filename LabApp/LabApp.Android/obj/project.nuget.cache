@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0dJhfg4mylxUkMc7ZvRrjOIsv9yPNbFUc1WkBxiUd/SC3/0F5GI4sO/R5NsM6a4+M+UIX0C5+ZdiO/g1Klxq0g==",
+  "dgSpecHash": "tyj1OX0fKXsiiuSJs8+ip6yoY/OlVKf5l59uCoI2MCXpGZwRW5vbbrKSC5je4QH0wvJ/ReYeOxTfIORbkbPPcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\patry\\source\\repos\\24.03-laby\\LabApp\\LabApp.Android\\LabApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\patry\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
