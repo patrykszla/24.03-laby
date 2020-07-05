@@ -23,6 +23,7 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\bin\Debug\netstandard2.0\La
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\bin\Debug\netstandard2.0\LabApp.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\bin\Debug\netstandard2.0\ref\LabApp.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\bin\Debug\netstandard2.0\LabApp.pdb
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.csprojAssemblyReference.cache
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Styles\Colors.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Styles\Styles.xaml.g.cs

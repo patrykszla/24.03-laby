@@ -222,7 +222,7 @@ namespace LabApp.ViewModels
 
         private void OnGoToDetails(Measurement itemElement)
         {
-            _navigation.PushAsync(new Views.DetailsPage(itemElement));
+            _navigation.PushAsync(new DetailsPage(itemElement));
         }
     }
 }

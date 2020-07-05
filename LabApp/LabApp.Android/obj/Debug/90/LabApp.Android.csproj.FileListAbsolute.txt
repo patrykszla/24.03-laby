@@ -1,9 +1,9 @@
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\LabApp.Android.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\LabApp.Android.pdb
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.labapp.apk
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.labapp.aab
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.labapp-Signed.aab
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.labapp-Signed.apk
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.weatherappmain.apk
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.weatherappmain.aab
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.weatherappmain-Signed.aab
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\com.companyname.weatherappmain-Signed.apk
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\LabApp.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\bin\Debug\LabApp.pdb
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
@@ -43,10 +43,10 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\XamlC.
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\LabApp.Android.csproj.CopyComplete
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\LabApp.Android.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\LabApp.Android.pdb
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.labapp.apk
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.weatherappmain.apk
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\base.zip
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.labapp.aab
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.labapp.apks
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.weatherappmain.aab
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\com.companyname.weatherappmain.apks
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\res\layout\tabbar.xml
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\res\layout\toolbar.xml
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\res\values\styles.xml
@@ -450,7 +450,7 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\androi
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\bin\packaged_resources
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\src\com\companyname\labapp\R.java
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\src\com\companyname\weatherappmain\R.java
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.o
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.o
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp.Android\obj\Debug\90\android\typemap.jm.armeabi-v7a.o
