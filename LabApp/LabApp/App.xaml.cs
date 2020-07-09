@@ -1,13 +1,14 @@
 ﻿using Newtonsoft.Json.Linq;
+using SQLite;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using LabApp.Models;
 using LabApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 namespace LabApp
 {
     public partial class App : Application
@@ -17,20 +18,26 @@ namespace LabApp
         public static string ApiUrl { get; private set; }
         public static string ApiMeasurementUrl { get; private set; }
         public static string ApiInstallationUrl { get; private set; }
+        public static SQLiteConnection db { get; private set; }
+        public static DatabaseHelper dbHelper { get; private set; }
 
         public App()
         {
             InitializeComponent();
 
-            InitializeVariables();
+            initializeVariables();
 
         }
-        private async Task InitializeVariables()
+
+        private async Task initializeVariables()
         {
             await LoadConfiguration();
 
+            dbHelper = new DatabaseHelper();
+
+            db = dbHelper.initDb();
+
             MainPage = new MainTabbedPage();
-            /*  MainPage = new NavigationPage(new MainTabbedPage());*/
 
         }
 
@@ -57,14 +64,35 @@ namespace LabApp
 
         protected override void OnStart()
         {
+            if (db == null)
+            {
+                dbHelper = new DatabaseHelper();
+
+            }
+            if (dbHelper == null)
+            {
+                db = dbHelper.initDb();
+            }
         }
 
         protected override void OnSleep()
         {
+            dbHelper.Dispose();
+            db = null;
+            dbHelper = null;
         }
 
         protected override void OnResume()
         {
+            if (db == null)
+            {
+                dbHelper = new DatabaseHelper();
+
+            }
+            if (dbHelper == null)
+            {
+                db = dbHelper.initDb();
+            }
         }
     }
 }

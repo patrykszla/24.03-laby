@@ -18,6 +18,16 @@ namespace LabApp.ViewModels
     public class HomeViewModel : BaseViewModel
     {
         protected readonly INavigation _navigation;
+        private bool _isRefreshing = false;
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set
+            {
+                SetProperty(ref _isRefreshing, value);
+            }
+        }
+
         public HomeViewModel(INavigation navigation)
         {
             _navigation = navigation;
@@ -27,15 +37,31 @@ namespace LabApp.ViewModels
         {
             Loading = true;
 
-            var location = await GetDeviceLocation();
+            IEnumerable<Installation> installations = null;
+            IEnumerable<Measurement> measurements = null;
+            await Task.Run(async () => {
 
-            var installations = await GetInstalationByLocation(location);
+                var location = await GetDeviceLocation();
+              
+                if (IsRefreshing == true ? false : checkSourceDataFromDb())
+                {
+                    installations = DatabaseHelper.getInstallation();
+                    measurements = DatabaseHelper.getMeasurements();
+                }
+                else
+                {
+                    installations = await GetInstalationByLocation(location, maxResults: 3);
+                    measurements = await GetMeasurementsByIdInstallation(installations);
+                    DatabaseHelper.saveInstallation(installations.ToList());
+                    DatabaseHelper.saveMeasurement(measurements.ToList());
+                }
 
-            var measurements = await GetMeasurementsByIdInstallation(installations);
+            });
+
+            Loading = false;
 
             ItemsList = new List<Measurement>(measurements);
 
-            Loading = false;
         }
         private bool loading;
         public bool Loading
@@ -86,11 +112,8 @@ namespace LabApp.ViewModels
             }
             return null;
         }
-        private async Task<IEnumerable<Installation>> GetInstalationByLocation(Location location, double maxDistanceKM = 3, int maxResults = -1)
+        private async Task<IEnumerable<Installation>> GetInstalationByLocation(Location location, double maxDistanceKM = 5, int maxResults = -1)
         {
-            /*TESTED VALUE*/
-            /*  location.Latitude = 50.017942;
-              location.Longitude = 20.976090;*/
             try
             {
 
@@ -103,7 +126,7 @@ namespace LabApp.ViewModels
                     {"maxResults", maxResults }
 
                 };
-                var response = await GET<IEnumerable<Installation>>(GeneratePath(path, querry));
+                IEnumerable<Installation> response = await GET<IEnumerable<Installation>>(GeneratePath(path, querry));
 
                 return response;
             }
@@ -124,16 +147,17 @@ namespace LabApp.ViewModels
                 return null;
             }
 
-            var measurements = new List<Measurement>();
 
-            foreach (var instalation in installations)
+            List<Measurement> measurements = new List<Measurement>();
+
+            foreach (Installation instalation in installations)
             {
                 Dictionary<string, object> querry = new Dictionary<string, object>
                 {
                     { "installationId", instalation.Id }
                 };
 
-                var response = await GET<Measurement>(GeneratePath(path, querry));
+                Measurement response = await GET<Measurement>(GeneratePath(path, querry));
                 if (response != null)
                 {
                     response.Installation = instalation;
@@ -223,6 +247,40 @@ namespace LabApp.ViewModels
         private void OnGoToDetails(Measurement itemElement)
         {
             _navigation.PushAsync(new DetailsPage(itemElement));
+        }
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
+
+                    await Init();
+
+                    IsRefreshing = false;
+                });
+            }
+        }
+
+
+
+        public static bool checkSourceDataFromDb()
+        {
+            List<Measurement> measurements = DatabaseHelper.getMeasurements();
+            DateTime time = DateTime.Now;
+            
+            if (measurements == null || measurements.Count == 0 || measurements.Any(measurement => (time - measurement.Current.TillDateTime).TotalMinutes >= 60))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+
         }
     }
 }
