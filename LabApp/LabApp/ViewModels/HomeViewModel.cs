@@ -50,7 +50,7 @@ namespace LabApp.ViewModels
                 }
                 else
                 {
-                    installations = await GetInstalationByLocation(location, maxResults: 3);
+                    installations = await GetInstalationByLocation(location);
                     measurements = await GetMeasurementsByIdInstallation(installations);
                     DatabaseHelper.saveInstallation(installations.ToList());
                     DatabaseHelper.saveMeasurement(measurements.ToList());
@@ -80,8 +80,9 @@ namespace LabApp.ViewModels
         {
             try
             {
-                Location location = await Geolocation.GetLastKnownLocationAsync();
+                Location location = await Geolocation.GetLocationAsync();
 
+                Console.WriteLine(location);
                 if (location == null)
                 {
                     var request = new GeolocationRequest(GeolocationAccuracy.Medium);
@@ -112,16 +113,26 @@ namespace LabApp.ViewModels
             }
             return null;
         }
-        private async Task<IEnumerable<Installation>> GetInstalationByLocation(Location location, double maxDistanceKM = 5, int maxResults = -1)
+        private async Task<IEnumerable<Installation>> GetInstalationByLocation(Location location, double maxDistanceKM = 3, int maxResults = -1)
         {
+
             try
             {
+
+                var test =new Location();
+                test.Latitude = 50.0396734847;
+                test.Longitude = 20.2254373336; 
+               /* test.Latitude = 50.0633277615;
+                test.Longitude = 19.9566528736; KRK*/
+                 /*location.Latitude = ;*/
+                    /*location.Longitude = ;*/
+
 
                 string path = App.ApiInstallationUrl;
                 Dictionary<string, object> querry = new Dictionary<string, object>
                 {
-                    {"lat",  location.Latitude},
-                    {"lng", location.Longitude},
+                    {"lat",  test.Latitude},
+                    {"lng", test.Longitude},
                     {"maxDistanceKM", maxDistanceKM },
                     {"maxResults", maxResults }
 

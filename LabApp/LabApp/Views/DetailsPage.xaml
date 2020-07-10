@@ -90,7 +90,7 @@
                 <controls:ContentWithHeader Title="Wilgotność">
                     <controls:ContentWithHeader.ControlContent>
                         <StackLayout>
-                            <Label Text="{Binding HumidityValue, Converter={StaticResource ValueToPercent}, StringFormat='{0}%'}" Style="{StaticResource LabelTextNormal}" />
+                            <Label Text="{Binding HumidityValue, Converter={StaticResource PercentToValue}, StringFormat='{0}%'}" Style="{StaticResource LabelTextNormal}" />
                             <Slider Maximum="4" Value="{Binding HumidityValue}" Style="{StaticResource SliderStyle}"/>
                         </StackLayout>
                     </controls:ContentWithHeader.ControlContent>
