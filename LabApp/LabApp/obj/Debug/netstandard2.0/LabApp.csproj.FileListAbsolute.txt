@@ -30,6 +30,7 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Vi
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Views\DetailsPage.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Views\MainTabbedPage.xaml.g.cs
+C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.csproj.CoreCompileInputs.cache
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.AssemblyInfoInputs.cache
@@ -38,4 +39,3 @@ C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\Xa
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\ref\LabApp.dll
 C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.pdb
-C:\Users\patry\source\repos\24.03-laby\LabApp\LabApp\obj\Debug\netstandard2.0\LabApp.csprojAssemblyReference.cache

@@ -240,13 +240,28 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.1080": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.1080"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "LabApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.Forms.Maps": "4.7.0.1080",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -496,13 +511,28 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.1080": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.1080"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "LabApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.Forms.Maps": "4.7.0.1080",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -752,13 +782,28 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.1080": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.1080"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "LabApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.Forms.Maps": "4.7.0.1080",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1008,13 +1053,28 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.1080": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.1080"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
       "LabApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.Forms.Maps": "4.7.0.1080",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1534,6 +1594,43 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/4.7.0.1080": {
+      "sha512": "l3mD55hvLQNxGPUTQWilCREkeoJ+vd6NjMgYFZTxQmUnrbwbz3v6HDCRRuIzXRNKnng+KQbppCGg6hfnIAcp6Q==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.7.0.1080",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.7.0.1080.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "LabApp/1.0.0": {
       "type": "project",
       "path": "../LabApp/LabApp.csproj",
@@ -1611,5 +1708,33 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.5.3.2 na 1.3.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n LabApp.iOS -> LabApp -> Xamarin.Essentials (>= 1.5.3.2) \r\n LabApp.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 4.7.0.1080 na 4.4.0.991265. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n LabApp.iOS -> LabApp -> Xamarin.Forms (>= 4.7.0.1080) \r\n LabApp.iOS -> Xamarin.Forms (>= 4.4.0.991265)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

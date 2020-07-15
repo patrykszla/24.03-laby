@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z0BENzCxI/0Iw0yREyWI51TzgIT3YY8LbfHi4t6GR/I61mSs4HL7Q635SBdte/+rvnPiT/FavVqYLnXczVd8VQ==",
+  "dgSpecHash": "mOhrtILYhoYCjU2G2rEp3i17ZtU3YJM881TU2hCYs81XGTUoxALRLtI0XMbpZWffrNUGF9eNlTqLwnJ0vjEbag==",
   "success": true,
   "projectFilePath": "C:\\Users\\patry\\source\\repos\\24.03-laby\\LabApp\\LabApp\\LabApp.csproj",
   "expectedPackageFiles": [
@@ -16,8 +16,9 @@
     "C:\\Users\\patry\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Users\\patry\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\xamarin.forms.maps\\4.7.0.1080\\xamarin.forms.maps.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

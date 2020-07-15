@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Globalization;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using LabApp.Models;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 using LabApp.Views;
 
 namespace LabApp.ViewModels
@@ -19,6 +21,21 @@ namespace LabApp.ViewModels
     {
         protected readonly INavigation _navigation;
         private bool _isRefreshing = false;
+     
+        private Location _actaulLocation;
+        public Location location
+        {
+            get => _actaulLocation;
+            set => SetProperty(ref _actaulLocation, value);
+        }
+
+        private IEnumerable<MapLocation> _locations;
+        public IEnumerable<MapLocation> Locations
+        {
+            get => _locations;
+            set => SetProperty(ref _locations, value);
+        }
+
         public bool IsRefreshing
         {
             get { return _isRefreshing; }
@@ -41,7 +58,7 @@ namespace LabApp.ViewModels
             IEnumerable<Measurement> measurements = null;
             await Task.Run(async () => {
 
-                var location = await GetDeviceLocation();
+                 location = await GetDeviceLocation();
               
                 if (IsRefreshing == true ? false : checkSourceDataFromDb())
                 {
@@ -61,6 +78,7 @@ namespace LabApp.ViewModels
             Loading = false;
 
             ItemsList = new List<Measurement>(measurements);
+            Locations = ItemsList.Select(i => new MapLocation { Address = i.Installation.Address.Description, Description = "CAQI: " + i.CurrentDisplayValue, Position = new Position(i.Installation.Location.Latitude, i.Installation.Location.Longitude) }).ToList();
 
         }
         private bool loading;
@@ -76,7 +94,7 @@ namespace LabApp.ViewModels
             set => SetProperty(ref listMeasurements, value);
         }
 
-        private async Task<Location> GetDeviceLocation()
+        public async Task<Location> GetDeviceLocation()
         {
             try
             {
@@ -115,17 +133,17 @@ namespace LabApp.ViewModels
         }
         private async Task<IEnumerable<Installation>> GetInstalationByLocation(Location location, double maxDistanceKM = 3, int maxResults = -1)
         {
-
+            var test = new Location();
+            test.Latitude = 50.0396734847;
+            test.Longitude = 20.2254373336;
             try
             {
 
-                var test =new Location();
-                test.Latitude = 50.0396734847;
-                test.Longitude = 20.2254373336; 
-               /* test.Latitude = 50.0633277615;
-                test.Longitude = 19.9566528736; KRK*/
-                 /*location.Latitude = ;*/
-                    /*location.Longitude = ;*/
+                
+                /* test.Latitude = 50.0633277615;
+                 test.Longitude = 19.9566528736; KRK*/
+                /*location.Latitude = ;*/
+                /*location.Longitude = ;*/
 
 
                 string path = App.ApiInstallationUrl;
@@ -275,9 +293,16 @@ namespace LabApp.ViewModels
             }
         }
 
+        private ICommand _infoWindowClickedCommand;
 
+        public ICommand InfoWindowClickedCommand => _infoWindowClickedCommand ?? (_infoWindowClickedCommand = new Command<string>(PinClicked));
+        private void PinClicked(string address)
+        {
+            Measurement item = ItemsList.First<Measurement>(i => i.Installation.Address.Description.Equals(address));
+            OnGoToDetails(item);
+        }
 
-        public static bool checkSourceDataFromDb()
+            public static bool checkSourceDataFromDb()
         {
             List<Measurement> measurements = DatabaseHelper.getMeasurements();
             DateTime time = DateTime.Now;

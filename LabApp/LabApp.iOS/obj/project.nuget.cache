@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aH3CCZggAXRNpOw42AG0XHs18ETYtFOSOa59LQ025aRXeAHpV4kIdMY+JRG37e4itVSHhVYCiHJ798uhMtzWaA==",
+  "dgSpecHash": "xsunP1bqDu7DqZlgfaFVDzkoucdmLQbJUw0Yy97Gt2zz4KWpkhSYI0qsRl0OTMoV3oD93x1By0zmizFO+ZdGeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\patry\\source\\repos\\24.03-laby\\LabApp\\LabApp.iOS\\LabApp.iOS.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,35 @@
     "C:\\Users\\patry\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\xamarin.forms.maps\\4.7.0.1080\\xamarin.forms.maps.4.7.0.1080.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.5.3.2 na 1.3.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n LabApp.iOS -> LabApp -> Xamarin.Essentials (>= 1.5.3.2) \r\n LabApp.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 4.7.0.1080 na 4.4.0.991265. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n LabApp.iOS -> LabApp -> Xamarin.Forms (>= 4.7.0.1080) \r\n LabApp.iOS -> Xamarin.Forms (>= 4.4.0.991265)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

@@ -16,5 +16,18 @@ namespace LabApp.Views
         {
             InitializeComponent();
         }
+        protected override void OnCurrentPageChanged()
+        {
+            base.OnCurrentPageChanged();
+
+            int index = Children.IndexOf(CurrentPage);
+
+            if (index == 2)
+            {
+                MessagingCenter.Send<Object>(this, "click_map_tab");
+            }
+
+
+        }
     }
 }
